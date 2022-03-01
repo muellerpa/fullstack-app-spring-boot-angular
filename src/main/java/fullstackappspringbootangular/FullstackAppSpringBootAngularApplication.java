@@ -12,7 +12,6 @@ public class FullstackAppSpringBootAngularApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FullstackAppSpringBootAngularApplication.class, args);
-		System.out.print("Test");
 	}
 
 }
