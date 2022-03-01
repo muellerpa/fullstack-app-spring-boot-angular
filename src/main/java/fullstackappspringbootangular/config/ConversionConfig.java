@@ -13,15 +13,14 @@ import java.util.Set;
 @Configuration
 public class ConversionConfig {
 
-    private Set<Converter> getConverters()
-    {
+    private Set<Converter> getConverters() {
         Set<Converter> converters = new HashSet<Converter>();
         converters.add(new RoomEntityToReservationResponseConverter());
         return converters;
     }
 
     @Bean
-    public ConversionService conversionService(){
+    public ConversionService conversionService() {
         ConversionServiceFactoryBean bean = new ConversionServiceFactoryBean();
         bean.setConverters(getConverters());
         bean.afterPropertiesSet();

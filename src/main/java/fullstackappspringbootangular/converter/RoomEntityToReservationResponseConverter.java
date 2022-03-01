@@ -6,7 +6,6 @@ import fullstackappspringbootangular.model.reservation.ReservationResponse;
 import fullstackappspringbootangular.model.reservation.Self;
 import fullstackappspringbootangular.rest.ResourceConstants;
 import org.springframework.core.convert.converter.Converter;
-import org.springframework.data.domain.Page;
 
 public class RoomEntityToReservationResponseConverter implements Converter<RoomEntity, ReservationResponse> {
     @Override

@@ -23,7 +23,7 @@ public class H2Bootstrap implements CommandLineRunner {
 
         Iterable<RoomEntity> itr = roomRepository.findAll();
 
-        for (RoomEntity room : itr){
+        for (RoomEntity room : itr) {
             System.out.println(room.getRoomNumber());
         }
 

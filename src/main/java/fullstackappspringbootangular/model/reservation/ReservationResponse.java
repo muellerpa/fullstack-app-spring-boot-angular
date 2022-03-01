@@ -2,14 +2,10 @@ package fullstackappspringbootangular.model.reservation;
 
 public class ReservationResponse {
 
-    private long id;
+    private Long id;
     private Integer roomNumber;
     private Integer price;
     private Links links;
-
-    public long getId() {
-        return id;
-    }
 
     public ReservationResponse() {
     }
@@ -19,7 +15,11 @@ public class ReservationResponse {
         this.price = price;
     }
 
-    public void setId(long id) {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
         this.id = id;
     }
 
